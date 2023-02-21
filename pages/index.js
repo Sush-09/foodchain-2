@@ -30,21 +30,30 @@ class ShowEntity extends Component {
             {
                 href: "/Farmer/signInOrSignUp",
                 header: Farmer,
-                style: {overflowWrap: 'break-word'}
+                style: {overflowWrap: 'break-word'},
+                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]
             },
             {
                 href: "/Manager/signInOrSignUp",
                 header: Manufacturer,
-                style: {overflowWrap: 'break-word'}            },
+                style: {overflowWrap: 'break-word'},
+                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]            
+            },
             {
                 header: Distributer,
-                style: {overflowWrap: 'break-word'}            },
+                style: {overflowWrap: 'break-word'},
+                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]
+            },
             {
                 header: Retailer,
-                style: {overflowWrap: 'break-word'}            },
+                style: {overflowWrap: 'break-word'},
+                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]            
+            },
             {
                 header: Customer,
-                style: {overflowWrap: 'break-word'}            }
+                style: {overflowWrap: 'break-word'},
+                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]            
+            }
         ];
 
         return <Card.Group centered items={items} />;
