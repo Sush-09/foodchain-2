@@ -19,11 +19,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/Farmer/viewItems": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Farmer/viewItems.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
