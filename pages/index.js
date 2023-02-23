@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Layout from '../components/Layout';
 import {Card, Grid, Button} from 'semantic-ui-react';
 // import web3 from '../ethereum/web3';
-// import {Link} from '../routes';
+import {Link} from '../routes';
 
 class ShowEntity extends Component {
     
@@ -28,10 +28,9 @@ class ShowEntity extends Component {
 
         const items = [
             {
-                href: "/Farmer/signInOrSignUp",
                 header: Farmer,
                 style: {overflowWrap: 'break-word'},
-                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]
+                extra: [<Link route="/Farmer/signUp"><a><Button basic color='blue'>Sign Up</Button></a></Link> ,<Link route="/Farmer/signIn"><a><Button basic color='blue'>Sign In</Button></a></Link>]
             },
             {
                 href: "/Manager/signInOrSignUp",
