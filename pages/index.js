@@ -33,10 +33,9 @@ class ShowEntity extends Component {
                 extra: [<Link route="/Farmer/signUp"><a><Button basic color='blue'>Sign Up</Button></a></Link> ,<Link route="/Farmer/signIn"><a><Button basic color='blue'>Sign In</Button></a></Link>]
             },
             {
-                href: "/Manager/signInOrSignUp",
                 header: Manufacturer,
                 style: {overflowWrap: 'break-word'},
-                extra: [<Button basic color='blue'>Sign Up</Button> ,<Button basic color='green'>Sign In</Button>]            
+                extra: [<Link route="/Manager/signUp"><a><Button basic color='blue'>Sign Up</Button></a></Link> ,<Link route="/Manager/signIn"><a><Button basic color='green'>Sign In</Button></a></Link>]            
             },
             {
                 header: Distributer,
