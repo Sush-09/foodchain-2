@@ -19,7 +19,7 @@ const deploy = async () => {
     JSON.parse(compiledFSC.interface)
   )
     .deploy({ data: compiledFSC.bytecode })
-    .send({ gas: '1000000', from: accounts[0] });
+    .send({ gas: '5000000', from: accounts[0] });
 
   console.log('Contract deployed to', result.options.address);
   provider.engine.stop();

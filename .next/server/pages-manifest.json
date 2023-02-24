@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Farmer/signIn": "pages/Farmer/signIn.js",
-  "/Manager/signIn": "pages/Manager/signIn.js"
+  "/": "pages/index.js"
 }

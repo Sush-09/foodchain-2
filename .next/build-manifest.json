@@ -14,15 +14,10 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/Farmer/signIn": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Farmer/signIn.js"
-    ],
-    "/Manager/signIn": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Manager/signIn.js"
+      "static/chunks/pages/index.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
