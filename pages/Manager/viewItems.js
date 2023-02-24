@@ -5,8 +5,7 @@ import Layout from '../../components/Layout';
 
 class ItemList extends Component {
     static async getInitialProps() {
-      // const address = '0xA2Ec9c4c87769748D2E4DB8E4647f2e793bc5eFf';
-      //const fsc = FoodSupplyChain(address);
+      const address = props.query.address;
       const states = ["ProduceByFarmer","RequestByManufacturer","AcceptRequestByFarmer","RejectRequestByFarmer",
       "PurchasedByManufacturer","PurchasedByDistributor","ShippedByFarmer","ReceivedByDistributor",
       "ProcessedByDistributor","PackageByDistributor","ForSaleByDistributor",
@@ -23,7 +22,7 @@ class ItemList extends Component {
           })
       );
   
-      return { items, item_length, states };
+      return { address, items, item_length, states };
     }
     renderItems() {
       const item_data = this.props.items.map((item) => {
@@ -43,7 +42,14 @@ class ItemList extends Component {
       return (
         <Layout>
           <div> 
-            <h3> Available Items </h3>           
+            <h3> Available Items </h3>    
+            <Link route={`/Manager/${this.props.address}/viewPurchasedItems`}>
+              <a>
+                <Button primary floated="right" style={{ marginBottom: 10 }}>
+                  Purchased Items
+                </Button>
+              </a>
+            </Link>       
             {this.renderItems()}
           </div>
         </Layout>

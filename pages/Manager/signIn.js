@@ -26,7 +26,7 @@ class SignIn extends Component {
           });
 
           if (val){
-            Router.pushRoute("/Manager/viewItems");
+            Router.pushRoute(`/Manager/${this.state.address}/viewItems`);
           }
          else{
             Router.pushRoute("/Manager/signUpOrSignIn");

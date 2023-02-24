@@ -3,7 +3,8 @@ const routes = require('next-routes')();
 routes
     .add('/Manager/signInOrSignUp', '/Manager/signInOrSignUp')
     .add('/Manager/signIn','/Manager/signIn')
-    .add('/Manager/viewItems','/Manager/viewItems')
+    .add('/Manager/:address/viewItems','/Manager/viewItems')
+    .add('/Manager/:address/viewPurchasedItems','/Manager/viewPurchasedItems')
     .add('/Manager/signUp','/Manager/signUp')
     .add("/Manager/:id", "/Manager/item")
     .add('/Farmer/signInOrSignUp', '/Farmer/signInOrSignUp')
